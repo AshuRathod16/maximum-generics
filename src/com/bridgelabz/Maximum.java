@@ -10,14 +10,14 @@ public class Maximum {
     }
 
     // compareTo method for checking max int
-    public Integer compareTo() {
+    public Float compareTo() {
         Scanner scanner = new Scanner(System.in);
         // User Input
-        System.out.println("Enter three number");
-        int p = scanner.nextInt();
-        int q = scanner.nextInt();
-        int r = scanner.nextInt();
-        int maximum = p;
+        System.out.println("Enter three float number");
+        float p = scanner.nextFloat();
+        float q = scanner.nextFloat();
+        float r = scanner.nextFloat();
+        float maximum = p;
 
         if (p > q && p > r) {
             maximum = p;
