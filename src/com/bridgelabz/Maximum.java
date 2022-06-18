@@ -4,30 +4,35 @@ import java.util.Scanner;
 
 public class Maximum {
     public static void main(String[] args) {
+        System.out.println("Welcome to maximum string program");
         //creating object
-        Maximum object = new Maximum();
-        System.out.println("Maximum among three int is : " + object.compareTo());
+        Maximum obj = new Maximum();
+        System.out.println("Maximum string among the three string is: " + obj.compareTo());
     }
 
-    // compareTo method for checking max int
-    public Float compareTo() {
+    //compareTo method for finding max String
+    public String compareTo() {
         Scanner scanner = new Scanner(System.in);
-        // User Input
-        System.out.println("Enter three float number");
-        float p = scanner.nextFloat();
-        float q = scanner.nextFloat();
-        float r = scanner.nextFloat();
-        float maximum = p;
+        System.out.println("Enter the three strings: ");
+        String a = scanner.nextLine();
+        System.out.println(a);
 
-        if (p > q && p > r) {
-            maximum = p;
-        } else if (q > p && q > r) {
-            maximum = q;
+        String b = scanner.nextLine();
+        System.out.println(b);
 
-        } else {
-            maximum = r;
+        String c = scanner.nextLine();
+        System.out.println(c);
+
+        String max = a;
+        if (b.compareTo(max) > 0) {
+            max = b;
         }
-        return maximum;
+        if (c.compareTo(max) > 0) {
+            max = c;
+
+        }
+        return max;
     }
+
 }
 
